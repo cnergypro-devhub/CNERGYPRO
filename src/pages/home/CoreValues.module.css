@@ -1,0 +1,41 @@
+.valueTitle {
+    text-align: center;
+}
+.valueTitle p {
+    width: 70%;
+    margin: auto;
+}
+.valueTitle h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.coreValue {
+    width: var(--container-width-lg);
+    margin: auto;
+}
+
+.valueImageText {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+.valueImageText h1 {
+    margin-top: 1.8rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 70%;
+}
+.valueImageText p {
+    font-size: 1.4rem;
+    width: 70%;
+    text-align: center;
+}
+
+.valueImageText img {
+    width: 60%;
+}
