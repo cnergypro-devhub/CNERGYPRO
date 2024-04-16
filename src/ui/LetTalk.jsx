@@ -19,11 +19,7 @@ function LetTalk() {
         };
     }, []); // empty dependency array
 
-    return (
-        <div id="let-talk-form-container" className={styles.talk}>
-            {/* This div will contain the form */}
-        </div>
-    );
+    return <div id="let-talk-form-container" className={styles.talk}></div>;
 }
 
 export default LetTalk;
