@@ -1,10 +1,6 @@
-import NewsletterForm from '../../ui/NewsLetter';
+// import NewsletterForm from '../../ui/NewsLetter';
 function ContactForm() {
-    return (
-        <>
-            <NewsletterForm />;
-        </>
-    );
+    return <>{/* <NewsletterForm />; */}</>;
 }
 
 export default ContactForm;

@@ -38,7 +38,7 @@ function ServiceHead() {
                     charge to build a world that is prepared for the future by
                     implementing cutting-edge IT solutions.
                 </p>
-                <div className="my-6 flex justify-center">
+                <div className="my-6 flex justify-center ">
                     <Link to="/hubspot-form" className="cta">
                         Get in Touch
                     </Link>
@@ -151,7 +151,7 @@ function ServiceHead() {
                 </div>
             </div>
             <div className="flex justify-center ">
-                <Link to="/hubspot-form" className="cta">
+                <Link to="/hubspot-form" className="cta mb-12">
                     Get in Touch
                 </Link>
             </div>

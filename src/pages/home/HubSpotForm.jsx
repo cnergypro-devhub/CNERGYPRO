@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import styles from './HubSpotForm.module.css';
 const hbspt = window.hbspt || {};
 
 function HubSpotForm() {
@@ -14,10 +14,7 @@ function HubSpotForm() {
     }, []);
 
     return (
-        <div
-            id="hubspot-form-container"
-            className="  bg-red-50 px-9 py-9"
-        ></div> // Ensure you have a container element with this ID where the form will be rendered
+        <div id="hubspot-form-container" className={styles.hubspot}></div> // Ensure you have a container element with this ID where the form will be rendered
     );
 }
 
