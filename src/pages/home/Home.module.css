@@ -1,13 +1,13 @@
 /* Home.module.css */
 .homepage {
-    height: calc(75vh - 5rem);
+    height: calc(85vh);
     margin: 2.5rem;
     background-size: cover;
     background-position: center;
     padding: 2.5rem 5rem;
     transition: background-image 4s ease;
-    width: var(--container-width-lg);
     margin: auto;
+    margin-top: 6rem;
 }
 
 .section {
@@ -22,7 +22,7 @@
 }
 
 .homepage h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1.3;
     color: var(--color-grey-50);
     font-weight: 700;
@@ -31,7 +31,7 @@
 }
 
 .homepage h2 {
-    width: 70%;
+    width: 50%;
     font-size: 1.6rem;
     color: var(--color-grey-50);
     margin-bottom: 2.5rem;

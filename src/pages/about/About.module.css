@@ -1,14 +1,15 @@
 /* Home.module.css */
 
 .aboutPage {
-    height: calc(80vh - 5rem);
+    height: calc(80vh);
     margin: 2.5rem;
     background-size: cover;
     background-position: center;
     padding: 2.5rem 5rem;
     transition: background-image 4s ease;
-    width: var(--container-width-lg);
+
     margin: auto;
+    margin-top: 6rem;
 }
 
 .section {
@@ -56,7 +57,7 @@
     gap: 1rem;
     margin-inline: auto;
     position: absolute;
-    top: 65%;
+    top: 77%;
     right: 29%;
     box-shadow: var(--shadow-lg);
 }
