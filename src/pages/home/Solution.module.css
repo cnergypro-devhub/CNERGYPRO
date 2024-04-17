@@ -98,6 +98,7 @@ section.solution {
 .iconsImage {
     display: flex;
     margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 .iconsImage h2 {
     font-weight: 600;
@@ -116,4 +117,14 @@ section.solution {
     width: 50%;
     display: flex;
     margin: auto;
+}
+
+.eCommerce {
+    position: relative;
+}
+
+.eCommerceLink a {
+    position: absolute;
+    top: 84%;
+    left: 2%;
 }
