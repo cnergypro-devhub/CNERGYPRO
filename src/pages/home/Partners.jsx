@@ -13,7 +13,7 @@ import SlideImage3 from '../../assets/microsoft.png';
 import SlideImage4 from '../../assets/wix.jpg';
 import SlideImage5 from '../../assets/splunk.png';
 import Review from './Review';
-import CoreValues from './CoreValues';
+import Testimonial from '../home/Testimonial';
 
 function Partners() {
     return (
@@ -56,7 +56,7 @@ function Partners() {
                 </Swiper>
             </div>
             <Review />
-            <CoreValues />
+            <Testimonial />
         </>
     );
 }

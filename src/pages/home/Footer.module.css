@@ -3,6 +3,7 @@ footer {
     padding-inline: 3rem;
     margin: auto;
     padding-block: 5rem;
+    margin-top: 6rem;
 }
 .footer {
     background: var(--color-grey-300);

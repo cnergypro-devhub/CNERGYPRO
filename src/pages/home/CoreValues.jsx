@@ -5,7 +5,6 @@ import Costumer from '../../assets/costumer.webp';
 import Star from '../../assets/star.jpg';
 import Interity from '../../assets/intregrity.jpg';
 import Realy from '../../assets/Reliability.jpg';
-import Testimonial from './Testimonial';
 
 function CoreValues() {
     return (
@@ -71,7 +70,6 @@ function CoreValues() {
                     </div>
                 </div>
             </div>
-            <Testimonial />
         </>
     );
 }

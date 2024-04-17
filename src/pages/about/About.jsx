@@ -1,5 +1,6 @@
 import image from '../../assets/aboutus.jpg';
 import Card from '../../assets/card 1.webp';
+import CoreValues from '../home/CoreValues';
 import styles from './About.module.css';
 
 function About() {
@@ -123,6 +124,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            <CoreValues />
         </>
     );
 }
