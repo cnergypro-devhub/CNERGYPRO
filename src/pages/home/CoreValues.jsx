@@ -1,10 +1,10 @@
 import styles from './CoreValues.module.css';
 import Innovation from '../../assets/innovation.webp';
-import Software from '../../assets/enterprise software.jpg';
+import Software from '../../assets/enterprise software.webp';
 import Costumer from '../../assets/costumer.webp';
-import Star from '../../assets/star.jpg';
-import Interity from '../../assets/intregrity.jpg';
-import Realy from '../../assets/Reliability.jpg';
+import Star from '../../assets/star.webp';
+import Interity from '../../assets/intregrity.webp';
+import Realy from '../../assets/Reliability.webp';
 
 function CoreValues() {
     return (

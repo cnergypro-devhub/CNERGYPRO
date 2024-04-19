@@ -7,11 +7,11 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import SlideImage1 from '../../assets/aws.png';
-import SlideImage2 from '../../assets/goggle logo.png';
-import SlideImage3 from '../../assets/microsoft.png';
-import SlideImage4 from '../../assets/wix.jpg';
-import SlideImage5 from '../../assets/splunk.png';
+import SlideImage1 from '../../assets/aws.webp';
+import SlideImage2 from '../../assets/goggle logo.webp';
+import SlideImage3 from '../../assets/microsoft.webp';
+import SlideImage4 from '../../assets/wix.webp';
+import SlideImage5 from '../../assets/splunk.webp';
 import Review from './Review';
 import Testimonial from '../home/Testimonial';
 

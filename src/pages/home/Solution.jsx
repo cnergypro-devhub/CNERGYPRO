@@ -1,8 +1,8 @@
 import styles from './Solution.module.css';
-import Magnify from '../../assets/magnify.png';
-import Padlock from '../../assets/padlock.png';
-import Gear from '../../assets/gear.png';
-import Cart from '../../assets/cart.png';
+import Magnify from '../../assets/magnify.webp';
+import Padlock from '../../assets/padlock.webp';
+import Gear from '../../assets/gear.webp';
+import Cart from '../../assets/cart.webp';
 import E_commerce from '../../assets/ecommerce.webp';
 import { Link } from 'react-router-dom';
 

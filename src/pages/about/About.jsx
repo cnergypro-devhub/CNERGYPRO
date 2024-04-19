@@ -1,4 +1,4 @@
-import image from '../../assets/aboutus.jpg';
+import image from '../../assets/aboutus.webp';
 import Card from '../../assets/card 1.webp';
 import CoreValues from '../home/CoreValues';
 import styles from './About.module.css';
@@ -45,7 +45,7 @@ function About() {
                 <div>
                     <h1>Our Mission</h1>
                     <p>
-                        To understand each of our clients’ unique needs and
+                        To understand each of our clients unique needs and
                         challenges and develop customised solutions that help
                         them achieve their goals. We are committed to putting
                         the customer first and delivering solutions that are
@@ -67,8 +67,8 @@ function About() {
                     <div className={styles.dCard}>
                         <h1>Discover</h1>
                         <p>
-                            We start by discovering our client’s unique needs
-                            and challenges. We work closely with our clients to
+                            We start by discovering our clients unique needs and
+                            challenges. We work closely with our clients to
                             understand their business operations and goals, as
                             well as any pain points they are experiencing.
                         </p>
@@ -76,7 +76,7 @@ function About() {
                     <div className={styles.dCard}>
                         <h1>Define</h1>
                         <p>
-                            Once we have a clear understanding of our client’s
+                            Once we have a clear understanding of our clients
                             needs, we define the scope of the project and
                             develop a clear plan of action. We set specific
                             goals and objectives, as well as a timeline and
@@ -106,10 +106,10 @@ function About() {
                         <h1>Deploy</h1>
                         <p>
                             Once the solution is developed, we deploy it to our
-                            client’s environment. We work closely with our
-                            client to ensure a smooth transition and provide
-                            training and support to ensure that the solution is
-                            fully operational.
+                            clients environment. We work closely with our client
+                            to ensure a smooth transition and provide training
+                            and support to ensure that the solution is fully
+                            operational.
                         </p>
                     </div>
                     <div className={styles.dCard}>
