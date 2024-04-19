@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom';
-import image from '../../assets/procurement.jpg';
+import image from '../../assets/procurement.webp';
+import Government from '../../assets/gov.webp';
+import Technology from '../../assets/technology.webp';
+import Logistics from '../../assets/logistics2.webp';
+import Education from '../../assets/education.webp';
+import Customer from '../../assets/custumer surport.webp';
+import Service from '../../assets/service.webp';
 import styles from './ServiceHead.module.css';
 
 function ServiceHead() {
@@ -13,7 +19,7 @@ function ServiceHead() {
                     rgba(0, 0, 0, 0.9) 0%,
                     rgba(0, 0, 0, 0.5) 50%,
                     rgba(0, 0, 0, 0) 100%
-                ), url('${image}')`,
+                ), url('${Service}')`,
                 }}
             >
                 <section className={styles.section}>
@@ -47,7 +53,7 @@ function ServiceHead() {
 
             <div className={styles.card}>
                 <div className={styles.serviceCards}>
-                    <img src={image} alt="image" />
+                    <img src={Government} alt="image" />
                     <div className={styles.cardDescription}>
                         <h1>Government Service</h1>
                         <p>
@@ -57,14 +63,10 @@ function ServiceHead() {
                             infrastructure, cybersecurity, and cloud computing.
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
                 <div className={styles.serviceCards}>
-                    <img src={image} alt="image" />
+                    <img src={Technology} alt="image" />
                     <div className={styles.cardDescription}>
                         <h1>Technology</h1>
                         <p>
@@ -74,14 +76,10 @@ function ServiceHead() {
                             designed to meet the needs of modern businesses.
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
                 <div className={styles.serviceCards}>
-                    <img src={image} alt="image" />
+                    <img src={Logistics} alt="image" />
                     <div className={styles.cardDescription}>
                         <h1>Logistics</h1>
                         <p>
@@ -91,14 +89,10 @@ function ServiceHead() {
                             manage their supply chains more efficiently.
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
                 <div className={styles.serviceCards}>
-                    <img src={image} alt="image" />
+                    <img src={Education} alt="image" />
                     <div className={styles.cardDescription}>
                         <h1>Education</h1>
                         <p>
@@ -109,11 +103,7 @@ function ServiceHead() {
                             outcomes.
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
                 <div className={styles.serviceCards}>
                     <img src={image} alt="image" />
@@ -126,14 +116,10 @@ function ServiceHead() {
                             management solutions
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
                 <div className={styles.serviceCards}>
-                    <img src={image} alt="image" />
+                    <img src={Customer} alt="image" />
                     <div className={styles.cardDescription}>
                         <h1>Customer Support</h1>
                         <p>
@@ -143,11 +129,7 @@ function ServiceHead() {
                             to help.
                         </p>
                     </div>
-                    <div className="w-90 mx-auto flex justify-center">
-                        <Link to="" className="cta">
-                            Learn more
-                        </Link>
-                    </div>
+                    <div className="w-90 mx-auto flex justify-center"></div>
                 </div>
             </div>
             <div className="flex justify-center ">

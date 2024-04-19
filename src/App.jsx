@@ -9,11 +9,14 @@ import HubSpotForm from './pages/home/HubSpotForm';
 import ContactUs from './pages/home/ContactUs';
 
 import LetTalk from './ui/LetTalk';
+import Error from './ui/Error';
 
 const router = createBrowserRouter([
     {
         // Layout route that is displayed in all the pages
         element: <AppLayout />,
+        errorElement: <Error />,
+
         children: [
             {
                 path: '/',
@@ -26,10 +29,12 @@ const router = createBrowserRouter([
             {
                 path: '/service',
                 element: <Services />,
+                errorElement: <Error />,
             },
             {
                 path: '/contact',
                 element: <Contact />,
+                errorElement: <Error />,
             },
 
             {
@@ -43,6 +48,7 @@ const router = createBrowserRouter([
             {
                 path: '/hubspot-contact',
                 element: <ContactUs />,
+                errorElement: <Error />,
             },
         ],
     },

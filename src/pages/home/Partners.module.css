@@ -4,13 +4,16 @@
     align-self: center;
 }
 
+:global(.swiper) {
+    padding: 20rem;
+}
+
 .swiper {
     width: var(--container-width-lg);
     margin: auto;
     cursor: grabbing;
     width: 70%;
     margin: 5rem;
-    padding: 10rem;
 }
 
 .partner {

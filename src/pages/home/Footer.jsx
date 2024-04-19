@@ -30,7 +30,7 @@ function Footer() {
                             <FaXTwitter />
                         </Link>
                         <Link className="transition-all hover:text-red-300">
-                            <FaFacebookF />
+                            {/* <FaFacebookF /> */}
                         </Link>
                         <Link className="transition-all hover:text-red-300">
                             <FaLinkedin />
