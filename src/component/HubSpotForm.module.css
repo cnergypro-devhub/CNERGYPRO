@@ -1,0 +1,9 @@
+.hubspot {
+    width: var(--container-width-forms);
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 14rem;
+}

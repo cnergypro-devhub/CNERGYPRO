@@ -1,63 +1,22 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Home.module.css';
-import image1 from '../home/annie-spratt-dWYU3i-mqEo-unsplash.jpg';
-import image2 from '../home/cnergypro img1.jpg.jpg';
-import image3 from '../home/scott-graham-5fNmWej4tAA-unsplash.jpg';
-import Partners from './Partners';
+// import Partner from '../../component/Partner';
+// // import Partners from '../../component/Partners';
+
+import HomeHeader from '../../component/HomeHeader';
+import Review from '../../component/Review';
+import Partner from '../../component/Partner';
+import Testimonial from '../../component/Testimonial';
 
 // import NewsletterForm from '../../ui/NewsLetter';
 
 function Home() {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = [image1, image2, image3];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) =>
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1,
-            );
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, [images.length]);
-
     return (
         <>
-            <main
-                className={styles.homepage}
-                style={{
-                    backgroundImage: `linear-gradient(
-                    to right,
-                    rgba(0, 0, 0, 0.7) 0%,
-                    rgba(0, 0, 0, 0.2) 50%,
-                    rgba(0, 0, 0, 0) 100%
-                ), url('${images[currentImageIndex]}')`,
-                }}
-            >
-                <section className={styles.section}>
-                    <div>
-                        <h1>Reimagine your</h1>
-
-                        <h1>buisness Potential </h1>
-                        <h2>
-                            Boost your business with our innovative IT solutions
-                            for unparalleled growth and efficiency.
-                        </h2>
-                        <div className={styles.ctaLinks}>
-                            <Link to="" className="cta">
-                                Explore CynergyPro
-                            </Link>
-                            <Link to="/hubspot-form" className="cta">
-                                Get in Touch
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-            </main>
+            <HomeHeader />
             {/* <NewsletterForm /> */}
 
-            <Partners />
+            <Partner />
+            <Review />
+            <Testimonial />
         </>
     );
 }

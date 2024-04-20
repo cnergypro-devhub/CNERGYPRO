@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Review.module.css';
-import Solution from './Solution';
+import Solution from '../pages/home/Solution';
 
 function Review() {
     return (
