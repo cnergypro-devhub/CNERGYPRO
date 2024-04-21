@@ -20,6 +20,9 @@
     margin: 5rem;
 }
 
+.swiper.slidepadding {
+    padding-block: 4rem;
+}
 .partner {
     width: var(--container-width-lg);
     margin-inline: auto;
