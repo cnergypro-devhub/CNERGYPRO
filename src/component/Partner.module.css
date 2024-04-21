@@ -4,13 +4,13 @@
     align-self: center;
 }
 
-:global(.swiper) {
+/* :global(.swiper) {
     padding: 18rem;
 }
 
 :global(.swiper-wrapper) {
     align-items: center;
-}
+} */
 
 .swiper {
     width: var(--container-width-lg);
