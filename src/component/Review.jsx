@@ -16,7 +16,7 @@ function Review() {
                         <p>Costumer Satisfactory Rate</p>
                     </div>
                     <div className={styles.stat}>
-                        <h1>11+</h1> <br />
+                        <h1>13+</h1> <br />
                         <p>Partnership</p>
                     </div>
                 </div>
