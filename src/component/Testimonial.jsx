@@ -1,17 +1,17 @@
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from './Testimonial.module.css';
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./Testimonial.module.css";
 
 // Import Swiper styles
-import 'swiper/modules';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/modules";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 // import "swiper/css"
 
 // import required modules
 // import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
-import { Navigation, Pagination } from 'swiper/modules';
-import HeaderText from './HeaderText';
+import { Navigation, Pagination } from "swiper/modules";
+import HeaderText from "./HeaderText";
 
 // SwiperCore.use([Autoplay]);
 // SwiperCore.use([Navigation, Pagination]);
@@ -21,7 +21,7 @@ export default function Testimonial() {
             <section>
                 <div className="main">
                     <HeaderText>
-                        {' '}
+                        {" "}
                         Stories of Reimagination with CnergyPro
                     </HeaderText>
 
@@ -31,11 +31,11 @@ export default function Testimonial() {
                         pagination={{
                             clickable: true,
                         }}
-                        onSlideChange={() => console.log('slide change')}
+                        onSlideChange={() => console.log("slide change")}
                         autoplay={{ delay: 3000 }}
                         // navigation={true}
-                        className="mySwiper"
-                        effect={'coverflow'}
+                        className="mySwiper sliderpadding"
+                        effect={"coverflow"}
                         coverflowEffect={{
                             rotate: 10,
                             depth: 200,
