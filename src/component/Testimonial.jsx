@@ -20,8 +20,11 @@ export default function Testimonial() {
         <>
             <section>
                 <div className="main">
-                    <HeaderText>  Stories of Reimagination with CnergyPro</HeaderText>
-              
+                    <HeaderText>
+                        {' '}
+                        Stories of Reimagination with CnergyPro
+                    </HeaderText>
+
                     <Swiper
                         modules={[Navigation, Pagination]}
                         loop={true}
