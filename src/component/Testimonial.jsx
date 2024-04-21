@@ -1,5 +1,6 @@
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import styles from './Testimonial.module.css';
 
 // Import Swiper styles
 import 'swiper/modules';
@@ -10,18 +11,20 @@ import 'swiper/css/pagination';
 // import required modules
 // import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Navigation, Pagination } from 'swiper/modules';
-import ContactForm from './ContactForm';
+import HeaderText from './HeaderText';
 
 // SwiperCore.use([Autoplay]);
 // SwiperCore.use([Navigation, Pagination]);
-export default function App() {
+export default function Testimonial() {
     return (
         <>
             <section>
                 <div className="main">
-                    <div className="head">
+                    <HeaderText>
+                        {' '}
                         Stories of Reimagination with CnergyPro
-                    </div>
+                    </HeaderText>
+
                     <Swiper
                         modules={[Navigation, Pagination]}
                         loop={true}
@@ -122,7 +125,6 @@ export default function App() {
                     </Swiper>
                 </div>
             </section>
-            <ContactForm />
         </>
     );
 }

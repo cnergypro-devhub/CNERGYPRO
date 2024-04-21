@@ -84,7 +84,7 @@ html {
 }
 @media screen and (max-width: 450px) {
     html {
-        font-size: 55%;
+        font-size: 54%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -176,16 +176,13 @@ img {
 /* Testimonial */
 
 .main {
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
-    /* height: 100vh; */
     margin-top: 10%;
     margin-bottom: 10rem;
 }
 
 .mySwiper {
     width: 80%;
+    padding-block: 2rem;
 }
 
 .swiper-slide {
@@ -260,7 +257,3 @@ img {
     height: 1px !important;
     margin-top: 4rem;
 }
-
-/* swiper-pagination {
-    margin-top: 4rem
-} */

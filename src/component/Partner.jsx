@@ -1,4 +1,4 @@
-import styles from './Partners.module.css';
+import styles from './Partner.module.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -7,20 +7,20 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import SlideImage1 from '../../assets/aws.webp';
-import SlideImage2 from '../../assets/goggle logo.webp';
-import SlideImage3 from '../../assets/microsoft.webp';
-import SlideImage4 from '../../assets/wix.webp';
-import SlideImage5 from '../../assets/splunk.webp';
-import Review from './Review';
-import Testimonial from '../home/Testimonial';
+import SlideImage1 from '../assets/aws.webp';
+import SlideImage2 from '../assets/goggle logo.png';
+import SlideImage3 from '../assets/microsoft.webp';
+import SlideImage4 from '../assets/wix.webp';
+import SlideImage5 from '../assets/splunk.webp';
+import HeaderText from './HeaderText';
 
-function Partners() {
+function Partner() {
     return (
         <>
             <div className={styles.partner}>
                 <div className={styles.partnerText}>
-                    <h1>Our Product Partners</h1>
+                    <HeaderText>Our Product Partners</HeaderText>
+
                     <p>
                         Discover how we collaborate with our trusted partners to
                         deliver top-tier IT solutions customized for your
@@ -55,10 +55,8 @@ function Partners() {
                     </div>
                 </Swiper>
             </div>
-            <Review />
-            <Testimonial />
         </>
     );
 }
 
-export default Partners;
+export default Partner;
