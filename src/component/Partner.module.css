@@ -5,10 +5,7 @@
 }
 
 :global(.swiper) {
-    padding-block: 20rem;
-}
-:global(.mySwiper) {
-    padding: 2rem;
+    padding: 18rem;
 }
 
 :global(.swiper-wrapper) {
