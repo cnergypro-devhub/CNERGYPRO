@@ -53,9 +53,9 @@ function Solution() {
                         got everything you need to succeed. Start exploring now!
                     </div>
                     <div className={styles.eCommerceLink}>
-                        {/* <Link to="" className="cta">
+                        <Link to="" className="cta">
                             Get in Touch
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
                 <img src={laptop} alt="e-commerce laptop" />
