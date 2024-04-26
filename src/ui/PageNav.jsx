@@ -79,7 +79,7 @@ function PageNav() {
                                         </li>
                                         <li>
                                             <Link to="/logistics">
-                                                Logistics
+                                                Logistic
                                             </Link>
                                         </li>
                                         <li>
