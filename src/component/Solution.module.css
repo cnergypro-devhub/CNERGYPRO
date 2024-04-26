@@ -13,12 +13,7 @@ section.solution {
 .solutionTitle {
     text-align: center;
 }
-.solutionTitle h1 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
+
 .solutionTitle p {
     width: 60%;
     font-weight: 400;
@@ -120,11 +115,32 @@ section.solution {
 }
 
 .eCommerce {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     position: relative;
+    height: 50rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+
+    background-image: linear-gradient(
+            rgba(36, 42, 46, 0.4),
+            rgba(36, 42, 46, 0.4)
+        ),
+        url("../assets/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem 5rem;
+}
+
+.eCommerce img {
+    width: 100%;
 }
 
 .eCommerceLink a {
     position: absolute;
     top: 84%;
-    left: 2%;
+    left: 4%;
 }

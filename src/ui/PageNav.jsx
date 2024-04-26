@@ -1,11 +1,11 @@
-import { FaBars } from 'react-icons/fa';
-import { RxCross2 } from 'react-icons/rx';
+import { FaBars } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 
-import { useState } from 'react';
-import Logo from './Logo';
-import styles from './PageNav.module.css';
+import { useState } from "react";
+import Logo from "./Logo";
+import styles from "./PageNav.module.css";
 
 function PageNav() {
     const [activeLink, setActiveLink] = useState(null);
@@ -32,7 +32,7 @@ function PageNav() {
                     >
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? 'activeNav' : `${styles.textLink}`
+                                isActive ? "activeNav" : `${styles.textLink}`
                             }
                             to="/"
                             onClick={toggleNavBar}
@@ -41,7 +41,7 @@ function PageNav() {
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? 'activeNav' : `${styles.textLink}`
+                                isActive ? "activeNav" : `${styles.textLink}`
                             }
                             to="/about"
                             onClick={toggleNavBar}
@@ -50,13 +50,13 @@ function PageNav() {
                         </NavLink>
                         <div
                             className={styles.serviceLink}
-                            onMouseEnter={() => handleHover('Service')}
+                            onMouseEnter={() => handleHover("Service")}
                             onMouseLeave={handleLeave}
                         >
                             <NavLink
                                 className={({ isActive }) =>
                                     isActive
-                                        ? 'activeNav'
+                                        ? "activeNav"
                                         : `${styles.textLink}`
                                 }
                                 to="/service"
@@ -64,23 +64,33 @@ function PageNav() {
                             >
                                 Service
                             </NavLink>
-                            {activeLink === 'Service' && (
+                            {activeLink === "Service" && (
                                 <div className={styles.dropdown}>
                                     <ul>
                                         <li>
-                                            <Link>Government Services</Link>
+                                            <Link to="/government">
+                                                Government Services
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link>Technology</Link>
+                                            <Link to="/technology">
+                                                Technology
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link>Logistics</Link>
+                                            <Link to="/logistics">
+                                                Logistics
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link>Education</Link>
+                                            <Link to="/education">
+                                                Education
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link>Procurement</Link>
+                                            <Link to="/procurement">
+                                                Procurement
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -88,7 +98,7 @@ function PageNav() {
                         </div>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? 'activeNav' : `${styles.textLink}`
+                                isActive ? "activeNav" : `${styles.textLink}`
                             }
                             to="/contact"
                             onClick={toggleNavBar}

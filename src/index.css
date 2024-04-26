@@ -128,6 +128,7 @@ input:focus {
 button {
     cursor: pointer;
     background: none;
+    font-family: inherit;
 }
 
 p,
