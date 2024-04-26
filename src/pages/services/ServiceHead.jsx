@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
-import image from '../../assets/procurement.webp';
-import Government from '../../assets/gov.webp';
-import Technology from '../../assets/technology.webp';
-import Logistics from '../../assets/logistics2.webp';
-import Education from '../../assets/education.webp';
-import Customer from '../../assets/custumer surport.webp';
-import Service from '../../assets/service.webp';
-import styles from './ServiceHead.module.css';
+import { Link } from "react-router-dom";
+import image from "../../assets/procurement.webp";
+import Government from "../../assets/gov.webp";
+import Technology from "../../assets/technology.webp";
+import Logistics from "../../assets/logistics2.webp";
+import Education from "../../assets/education.webp";
+import Customer from "../../assets/custumer surport.webp";
+import Service from "../../assets/service.webp";
+import styles from "./ServiceHead.module.css";
 
 function ServiceHead() {
     return (
