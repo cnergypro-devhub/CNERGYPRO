@@ -15,6 +15,12 @@ import Logistics from "./component/Logistics";
 import Technlogy from "./component/Technlogy";
 import Education from "./component/Education";
 import Procurement from "./component/Procurement";
+import Mission from "./component/Mission";
+import OurTeam from "./pages/about/OurTeam";
+import OurProcess from "./pages/about/OurProcess";
+import Blogs from "./pages/resourses/Blogs";
+import News from "./pages/resourses/News";
+import Whitepaper from "./pages/resourses/Whitepaper";
 
 const router = createBrowserRouter([
     {
@@ -32,9 +38,33 @@ const router = createBrowserRouter([
                 element: <AboutUs />,
             },
             {
-                path: "/service",
+                path: "/mission",
+                element: <Mission />,
+            },
+            {
+                path: "/team",
+                element: <OurTeam />,
+            },
+            {
+                path: "/process",
+                element: <OurProcess />,
+            },
+            {
+                path: "",
                 element: <Services />,
                 errorElement: <Error />,
+            },
+            {
+                path: "/blogs",
+                element: <Blogs />,
+            },
+            {
+                path: "/news",
+                element: <News />,
+            },
+            {
+                path: "/whitepaper",
+                element: <Whitepaper />,
             },
             {
                 path: "/contact",
