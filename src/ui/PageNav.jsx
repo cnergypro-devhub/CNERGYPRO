@@ -6,6 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import Logo from "./Logo";
 import styles from "./PageNav.module.css";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 function PageNav() {
     const [activeLink, setActiveLink] = useState(null);
@@ -39,15 +40,52 @@ function PageNav() {
                         >
                             Home
                         </NavLink>
-                        <NavLink
-                            className={({ isActive }) =>
-                                isActive ? "activeNav" : `${styles.textLink}`
-                            }
-                            to="/about"
-                            onClick={toggleNavBar}
+                        <div
+                            className={styles.serviceLink}
+                            onMouseEnter={() => handleHover("Our Company")}
+                            onMouseLeave={handleLeave}
                         >
-                            About
-                        </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    (isActive &&
+                                        activeLink === "Our Company") ||
+                                    (!isActive && !activeLink)
+                                        ? "activeNav"
+                                        : `${styles.textLink}`
+                                }
+                                to="#"
+                                onClick={toggleNavBar}
+                            >
+                                <div className={styles.linkArrow}>
+                                    <div>Our Company</div>
+                                    <div>
+                                        <MdKeyboardArrowDown />
+                                    </div>
+                                </div>
+                            </NavLink>
+                            {activeLink === "Our Company" && (
+                                <div className={styles.dropdown}>
+                                    <ul>
+                                        <li>
+                                            <Link to="/about">About Us</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/mission">
+                                                Mission & Vision
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/team">Our Team</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/process">
+                                                Our Process
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
                         <div
                             className={styles.serviceLink}
                             onMouseEnter={() => handleHover("Service")}
@@ -55,14 +93,21 @@ function PageNav() {
                         >
                             <NavLink
                                 className={({ isActive }) =>
-                                    isActive
+                                    (isActive &&
+                                        activeLink === "Our Service") ||
+                                    (!isActive && !activeLink)
                                         ? "activeNav"
                                         : `${styles.textLink}`
                                 }
-                                to="/service"
+                                to="#"
                                 onClick={toggleNavBar}
                             >
-                                Service
+                                <div className={styles.linkArrow}>
+                                    <div>Our Services</div>
+                                    <div>
+                                        <MdKeyboardArrowDown />
+                                    </div>
+                                </div>
                             </NavLink>
                             {activeLink === "Service" && (
                                 <div className={styles.dropdown}>
@@ -96,6 +141,58 @@ function PageNav() {
                                 </div>
                             )}
                         </div>
+                        <div
+                            className={styles.serviceLink}
+                            onMouseEnter={() => handleHover("Resources")}
+                            onMouseLeave={handleLeave}
+                        >
+                            <NavLink
+                                className={({ isActive }) =>
+                                    (isActive && activeLink === "Resources") ||
+                                    (!isActive && !activeLink)
+                                        ? "activeNav"
+                                        : `${styles.textLink}`
+                                }
+                                to="#"
+                                onClick={toggleNavBar}
+                            >
+                                <div className={styles.linkArrow}>
+                                    <div>Resources</div>
+                                    <div>
+                                        <MdKeyboardArrowDown />
+                                    </div>
+                                </div>
+                            </NavLink>
+                            {activeLink === "Resources" && (
+                                <div className={styles.dropdown}>
+                                    <ul>
+                                        <li>
+                                            <Link to="/blogs">Blogs</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/news">News</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/whitepaper">
+                                                WhitePaper
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
+                        <NavLink
+                            className={({ isActive }) =>
+                                (isActive && activeLink === "store") ||
+                                (!isActive && !activeLink)
+                                    ? "activeNav"
+                                    : `${styles.textLink}`
+                            }
+                            to=""
+                            onClick={toggleNavBar}
+                        >
+                            Store
+                        </NavLink>
                         <NavLink
                             className={({ isActive }) =>
                                 isActive ? "activeNav" : `${styles.textLink}`
