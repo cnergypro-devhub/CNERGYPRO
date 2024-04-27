@@ -188,7 +188,7 @@ function PageNav() {
                                     ? "activeNav"
                                     : `${styles.textLink}`
                             }
-                            to=""
+                            to="#"
                             onClick={toggleNavBar}
                         >
                             Store
