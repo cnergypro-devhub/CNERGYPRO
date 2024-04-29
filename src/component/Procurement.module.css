@@ -1,0 +1,82 @@
+.government {
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 9rem;
+
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: calc(60vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url("../assets/procurement.webp");
+}
+.government h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--color-brand-600);
+}
+
+.governmentBody {
+    background-color: var(--color-blue-900);
+    padding-block: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.govRight {
+    margin: auto;
+    padding: 6rem;
+    margin-right: 1rem;
+    width: var(--container-width-small);
+    font-weight: 400;
+    background: var(--color-grey-50);
+    box-shadow: var(--shadow-lg);
+    font-size: 1.4rem;
+}
+.govRight p {
+    width: 85%;
+}
+.govLeft {
+    margin: auto;
+    padding: 6rem;
+    margin-left: -11rem;
+    box-shadow: var(--shadow-lg);
+    width: var(--container-width-small);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--color-grey-50);
+    font-size: 1.4rem;
+    border: 1.5px solid var(--color-brand-300);
+}
+
+.govLeft span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.govLeft h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-brand-600);
+}
+
+.govLast {
+    width: 40%;
+    color: var(--color-grey-50);
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    grid-column: 1/-1;
+    border: 1.5px solid var(--color-grey-500);
+    box-shadow: var(--shadow-lg);
+}
