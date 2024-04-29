@@ -68,7 +68,7 @@ function About() {
                     <p>
                         Whether you are looking to streamline operations,
                         enhance cybersecurity, or drive digital transformation,
-                        CnergyPro is here to help.
+                        CnergyPro is here to help
                     </p>
                     <div className={styles.link}>
                         <Link to="/hubspot-talk" className="cta">
