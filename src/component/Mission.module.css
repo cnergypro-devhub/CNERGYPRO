@@ -1,0 +1,115 @@
+.missionPage {
+    height: calc(90vh);
+    margin: 2.5rem;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem 5rem;
+    margin: auto;
+    margin-top: 9rem;
+}
+
+.section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+}
+
+.large {
+    color: var(--color-brand-500);
+}
+
+.missionVision {
+    width: var(--container-width-lg);
+    display: flex;
+    gap: 4rem;
+    margin: auto;
+    color: var(--color-grey-200);
+    margin-top: 7rem;
+}
+.missionVision h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.missionVision .left {
+    box-shadow: var(--shadow-lg);
+    padding: 4rem 3rem;
+    background: var(--color-brand-500);
+    transition: all 0.4s ease;
+}
+.missionVision .left:hover {
+    box-shadow: var(--shadow-md);
+
+    background: var(--color-brand-600);
+}
+.missionVision .right {
+    padding: 4rem 3rem;
+    background: var(--color-blue-800);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.4s ease;
+}
+.missionVision .right:hover {
+    background: var(--color-blue-900);
+    box-shadow: var(--shadow-md);
+}
+.missionVision .right2 {
+    padding: 4rem 3rem;
+    background: var(--color-brand-500);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.4s ease;
+}
+.missionVision .right2:hover {
+    background: var(--color-brand-600);
+    box-shadow: var(--shadow-md);
+}
+
+.ourValues {
+    background: var(--color-grey-700);
+    width: var(--container-width-lg);
+    margin-inline: auto;
+    color: var(--color-grey-200);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+    margin-top: 7rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.ourValues h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-brand-500);
+}
+.ourValues p {
+    font-size: 1.5rem;
+}
+.ourValues span {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.partner {
+    width: var(--container-width-small);
+    margin-inline: auto;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.partner h1 {
+    font-size: 2rem;
+    color: var(--color-brand-500);
+    text-align: center;
+}
+
+.partner p {
+    margin-bottom: 1rem;
+}

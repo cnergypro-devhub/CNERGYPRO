@@ -1,7 +1,8 @@
-import image from '../../assets/aboutus.webp';
-import Card from '../../assets/card 1.webp';
-import CoreValues from '../home/CoreValues';
-import styles from './About.module.css';
+import { Link } from "react-router-dom";
+import image from "../../assets/aboutus.webp";
+import Card from "../../assets/card 1.webp";
+import CoreValues from "../home/CoreValues";
+import styles from "./About.module.css";
 
 function About() {
     return (
@@ -31,100 +32,57 @@ function About() {
                 <div className={styles.heroCard}>
                     <h1>Empowering Digital Business Success</h1>
                     <h2>
-                        At our company, we comprise a dedicated team of
-                        passionate professionals committed to providing
-                        cutting-edge IT solutions that empower businesses to
-                        succeed in todays digital era.
+                        At CnergyPro, were dedicated to delivering innovative IT
+                        solutions that help businesses thrive in the digital
+                        age. With a deep understanding of evolving technologies
+                        and a commitment to client success, we provide
+                        cutting-edge solutions tailored to meet the unique needs
+                        of every organization.
                     </h2>
                 </div>
             </main>
+
             <div className={styles.card}>
-                <div>
-                    <img src={Card} alt="card" />
-                </div>
-                <div>
-                    <h1>Our Mission</h1>
+                <h1>Why Chose us?</h1>
+                <h2></h2>
+                <p>
+                    <span>Expertise:</span> Our team of passionate professionals
+                    brings years of experience and expertise to every project,
+                    ensuring unparalleled quality and results.
+                </p>
+                <p>
+                    <span>Client-Centric Approach:</span> We prioritize the
+                    needs and goals of our clients above all else, working
+                    closely with them to develop customized solutions that drive
+                    success.
+                </p>
+                <p>
+                    <span>Innovation:</span> We stay at the forefront of
+                    technological advancements and industry trends, constantly
+                    exploring new ways to innovate and elevate our services.
+                </p>
+            </div>
+
+            <div className={styles.darkBg}>
+                <div className={styles.left}>
+                    <h1>Ready to Experience the CnergyPro Difference?</h1>
                     <p>
-                        To understand each of our clients unique needs and
-                        challenges and develop customised solutions that help
-                        them achieve their goals. We are committed to putting
-                        the customer first and delivering solutions that are
-                        tailored to meet their specific needs.
+                        Whether you are looking to streamline operations,
+                        enhance cybersecurity, or drive digital transformation,
+                        CnergyPro is here to help.
                     </p>
+                    <div className={styles.link}>
+                        <Link to="/hubspot-talk" className="cta">
+                            Lets Connect
+                        </Link>
+                    </div>
+                </div>
+                <div className={styles.right}>
+                    <img src="" alt="" />
                 </div>
             </div>
 
-            <div className={styles.threeD}>
-                <div className={styles.threeDHead}>
-                    <h1>Our 6-D Process</h1>
-                    <p>
-                        Our IT solutions are customised to your specific
-                        business needs thanks to close cooperation and open
-                        communication.
-                    </p>
-                </div>
-                <div className={styles.dCards}>
-                    <div className={styles.dCard}>
-                        <h1>Discover</h1>
-                        <p>
-                            We start by discovering our clients unique needs and
-                            challenges. We work closely with our clients to
-                            understand their business operations and goals, as
-                            well as any pain points they are experiencing.
-                        </p>
-                    </div>
-                    <div className={styles.dCard}>
-                        <h1>Define</h1>
-                        <p>
-                            Once we have a clear understanding of our clients
-                            needs, we define the scope of the project and
-                            develop a clear plan of action. We set specific
-                            goals and objectives, as well as a timeline and
-                            budget for the project.
-                        </p>
-                    </div>
-                    <div className={styles.dCard}>
-                        <h1>Design</h1>
-                        <p>
-                            We then move on to the design phase, where we create
-                            a customized solution that meets our client’s unique
-                            needs. We work closely with our clients to ensure
-                            that the solution is both effective and
-                            user-friendly.
-                        </p>
-                    </div>
-                    <div className={styles.dCard}>
-                        <h1>Develop</h1>
-                        <p>
-                            Once the solution is designed, we move on to the
-                            development phase. Our team of experienced
-                            professionals develops the solution using the latest
-                            technology and best practices.
-                        </p>
-                    </div>
-                    <div className={styles.dCard}>
-                        <h1>Deploy</h1>
-                        <p>
-                            Once the solution is developed, we deploy it to our
-                            clients environment. We work closely with our client
-                            to ensure a smooth transition and provide training
-                            and support to ensure that the solution is fully
-                            operational.
-                        </p>
-                    </div>
-                    <div className={styles.dCard}>
-                        <h1>Deliver</h1>
-                        <p>
-                            We deliver the solution to our client and continue
-                            to provide ongoing support and maintenance. We work
-                            closely with our clients to ensure that the solution
-                            continues to meet their needs and helps them achieve
-                            their goals.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <CoreValues />
+            {/* <CoreValues /> */}
         </>
     );
 }
