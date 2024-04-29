@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import image from "../../assets/aboutus.webp";
-import Card from "../../assets/card 1.webp";
-import CoreValues from "../home/CoreValues";
 import styles from "./About.module.css";
+import grow from "../../assets/grow.jpg";
 
 function About() {
     return (
@@ -69,7 +68,7 @@ function About() {
                     <p>
                         Whether you are looking to streamline operations,
                         enhance cybersecurity, or drive digital transformation,
-                        CnergyPro is here to help.
+                        CnergyPro is here to help
                     </p>
                     <div className={styles.link}>
                         <Link to="/hubspot-talk" className="cta">
@@ -78,7 +77,7 @@ function About() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <img src="" alt="" />
+                    <img src={grow} alt="leaf" />
                 </div>
             </div>
 
