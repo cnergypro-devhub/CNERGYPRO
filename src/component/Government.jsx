@@ -22,24 +22,27 @@ function Government() {
                 <div className={styles.govLeft}>
                     <h1>Our Offerings</h1>
                     <p>
-                        Digital Transformation: Transform outdated processes and
-                        systems with our comprehensive digital transformation
-                        solutions tailored for government agencies.
+                        <span>Digital Transformation:</span> Transform outdated
+                        processes and systems with our comprehensive digital
+                        transformation solutions tailored for government
+                        agencies.
                     </p>
                     <p>
-                        Cybersecurity: Protect sensitive data and infrastructure
-                        with advanced cybersecurity measures designed to
-                        mitigate cyber threats and safeguard citizen
+                        <span>Cybersecurity:</span> Protect sensitive data and
+                        infrastructure with advanced cybersecurity measures
+                        designed to mitigate cyber threats and safeguard citizen
                         information.
                     </p>
                     <p>
-                        Data Analytics: Harness the power of data analytics to
-                        make informed decisions, improve service delivery, and
-                        drive operational efficiency.
+                        <span>Data Analytics:</span> Harness the power of data
+                        analytics to make informed decisions, improve service
+                        delivery, and drive operational efficiency.
                     </p>
-                    <Link to="/hubspot-contact" className="cta mt-12">
-                        Let Talk!
-                    </Link>
+                    <div className={styles.link}>
+                        <Link to="/hubspot-contact" className="cta ">
+                            Let Talk!
+                        </Link>
+                    </div>
                 </div>
                 <div className={styles.govLast}>
                     <p>

@@ -31,6 +31,7 @@
     margin: auto;
     color: var(--color-grey-200);
     margin-top: 7rem;
+    text-align: center;
 }
 .missionVision h1 {
     text-align: center;
