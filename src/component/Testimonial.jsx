@@ -21,7 +21,6 @@ export default function Testimonial() {
             <section>
                 <div className="main">
                     <HeaderText>
-                        {" "}
                         Stories of Reimagination with CnergyPro
                     </HeaderText>
 
@@ -31,7 +30,7 @@ export default function Testimonial() {
                         pagination={{
                             clickable: true,
                         }}
-                        onSlideChange={() => console.log("slide change")}
+                        // onSlideChange={() => console.log("slide change")}
                         autoplay={{ delay: 3000 }}
                         // navigation={true}
                         className="mySwiper sliderpadding"

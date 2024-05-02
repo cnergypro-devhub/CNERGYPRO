@@ -119,7 +119,7 @@ function PageNav() {
                                         </li>
                                         <li>
                                             <Link to="/technology">
-                                                Technology
+                                                Software Development
                                             </Link>
                                         </li>
                                         <li>
@@ -135,6 +135,11 @@ function PageNav() {
                                         <li>
                                             <Link to="/procurement">
                                                 Procurement
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/costumer">
+                                                Customer Support
                                             </Link>
                                         </li>
                                     </ul>

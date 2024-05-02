@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/about/AboutUs";
-import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import AppLayout from "./ui/AppLayout";
 import HubSpotForm from "./pages/home/HubSpotForm";
@@ -12,7 +11,6 @@ import LetTalk from "./ui/LetTalk";
 import Error from "./ui/Error";
 import Government from "./component/Government";
 import Logistics from "./component/Logistics";
-import Technlogy from "./component/Technlogy";
 import Education from "./component/Education";
 import Procurement from "./component/Procurement";
 import Mission from "./component/Mission";
@@ -21,6 +19,8 @@ import OurProcess from "./pages/about/OurProcess";
 import Blogs from "./pages/resourses/Blogs";
 import News from "./pages/resourses/News";
 import Whitepaper from "./pages/resourses/Whitepaper";
+import Costumer from "./pages/services/Customer";
+import SoftwareDevelopment from "./pages/services/SoftwareDevelopment";
 
 const router = createBrowserRouter([
     {
@@ -49,10 +49,10 @@ const router = createBrowserRouter([
                 path: "/process",
                 element: <OurProcess />,
             },
+
             {
-                path: "",
-                element: <Services />,
-                errorElement: <Error />,
+                path: "/costumer",
+                element: <Costumer />,
             },
             {
                 path: "/blogs",
@@ -95,7 +95,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/technology",
-                element: <Technlogy />,
+                element: <SoftwareDevelopment />,
             },
             {
                 path: "/education",

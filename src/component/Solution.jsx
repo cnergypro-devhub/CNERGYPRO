@@ -54,7 +54,7 @@ function Solution() {
                     </div>
                     <div className={styles.eCommerceLink}>
                         <Link to="" className="cta">
-                            Get in Touch
+                            Shop Now!
                         </Link>
                     </div>
                 </div>
