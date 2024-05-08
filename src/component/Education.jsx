@@ -21,7 +21,7 @@ function Education() {
                         experiences and supporting student success. At
                         CnergyPro, we offer innovative education solutions
                         designed to transform learning environments, empower
-                        educators, and enhance student outcomes.
+                        educators, and enhance student outcomes
                     </p>
                 </div>
             </div>
