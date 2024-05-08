@@ -12,7 +12,7 @@ function Education() {
         <div className={styles.education}>
             <div className={styles.educationHead}>
                 <Largeh1>
-                    Transforming Learning Experiences, Empowering Educators
+                    TTTransforming Learning Experiences, Empowering Educators
                 </Largeh1>
                 <div className={styles.eduTextBody}>
                     <p>
